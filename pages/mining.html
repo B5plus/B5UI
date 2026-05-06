@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mining Products & Services — B5 Plus Group</title>
+    <meta
+      name="description"
+      content="B5 Plus is a single-source industrial partner for West Africa's gold, manganese, and bauxite mining operations — grinding media, structural steel, PEB site buildings, fabrication, and procurement."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <style data-screen-label="Mining">
+      .page-hero {
+        background: #0a0a0b;
+        color: #fff;
+        padding: 120px 0 80px;
+        position: relative;
+        overflow: hidden;
+      }
+      .page-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          #3a1c0c 0%,
+          #8a3a14 60%,
+          #c8431c 100%
+        );
+        opacity: 0.6;
+      }
+      .page-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.2) 0 6px,
+          transparent 6px 24px
+        );
+      }
+      .page-hero .wrap {
+        position: relative;
+        z-index: 2;
+      }
+      .page-hero .crumbs {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 36px;
+      }
+      .page-hero h1 {
+        font-size: clamp(56px, 9vw, 140px);
+        letter-spacing: -0.035em;
+        line-height: 0.92;
+        margin-bottom: 28px;
+      }
+      .page-hero h1 em {
+        font-family: var(--serif);
+        font-style: italic;
+        color: #fff;
+        font-weight: 400;
+      }
+      .page-hero .lede {
+        max-width: 62ch;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.5;
+      }
+      .page-hero .meta {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 80px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .page-hero .meta .it {
+        padding: 24px 0 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        padding-right: 24px;
+        padding-left: 24px;
+      }
+      .page-hero .meta .it:first-child {
+        padding-left: 0;
+      }
+      .page-hero .meta .it:last-child {
+        border-right: 0;
+      }
+      .page-hero .meta .v {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .page-hero .meta .l {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 6px;
+      }
+
+      .section {
+        padding: 120px 0;
+        background: var(--paper);
+      }
+      .section.dark {
+        background: var(--ink);
+        color: #fff;
+      }
+      .section.white {
+        background: #fff;
+      }
+      .section h2 {
+        font-size: clamp(40px, 5.5vw, 84px);
+        letter-spacing: -0.03em;
+        line-height: 0.95;
+        margin-bottom: 24px;
+      }
+      .section h2 em {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--b5-red);
+        font-weight: 400;
+      }
+      .section p {
+        font-size: 18px;
+        line-height: 1.55;
+        color: var(--ink-2);
+        max-width: 60ch;
+      }
+      .section.dark p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .svc-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        border-left: 1px solid var(--line);
+        border-top: 1px solid var(--line);
+      }
+      .svc-card {
+        padding: 36px 28px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .svc-card .num {
+        font-family: var(--mono);
+        font-size: 48px;
+        color: var(--b5-red);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+      .svc-card h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 8px 0 12px;
+        letter-spacing: -0.01em;
+        line-height: 1.15;
+      }
+      .svc-card p {
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.5;
+        margin: 0;
+      }
+      .svc-card .arr {
+        margin-top: 24px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        color: var(--b5-red);
+        text-transform: uppercase;
+      }
+
+      .support-strip {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .support-strip .visual {
+        aspect-ratio: 1/1;
+        background: linear-gradient(
+          135deg,
+          #0f1f4d 0%,
+          #1e3a8a 60%,
+          #3458c4 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+      .support-strip .visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.15) 0 4px,
+          transparent 4px 14px
+        );
+      }
+      .support-strip .visual .label {
+        position: absolute;
+        left: 24px;
+        bottom: 20px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .support-strip .visual .corner {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        font-family: var(--mono);
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .support-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .support-list li {
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+      }
+      .support-list li:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .support-list .num {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--b5-red);
+        letter-spacing: 0.16em;
+        flex-shrink: 0;
+        min-width: 30px;
+      }
+      .support-list strong {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        flex: 1;
+      }
+      .support-list .det {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        letter-spacing: 0.1em;
+        text-align: right;
+      }
+
+      .minerals-strip {
+        padding: 80px 0;
+        background: #fff;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .minerals-strip h3 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin-bottom: 36px;
+        text-align: center;
+      }
+      .minerals-strip h3 em {
+        font-family: var(--serif);
+        font-style: italic;
+        color: var(--b5-red);
+        font-weight: 400;
+      }
+      .minerals-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        border-top: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+      }
+      .mineral {
+        padding: 32px 20px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        text-align: center;
+      }
+      .mineral .sym {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--b5-blue);
+        font-family: var(--mono);
+      }
+      .mineral .name {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 8px;
+      }
+
+      .cta-band {
+        padding: 140px 0;
+        background: linear-gradient(135deg, #9a0b22 0%, #c8102e 100%);
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-band::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.04) 0 2px,
+          transparent 2px 24px
+        );
+      }
+      .cta-band .wrap {
+        position: relative;
+      }
+      .cta-band h2 {
+        font-size: clamp(48px, 7vw, 108px);
+        letter-spacing: -0.035em;
+        margin-bottom: 32px;
+        line-height: 0.95;
+      }
+      .cta-band h2 em {
+        font-family: var(--serif);
+        font-style: italic;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .cta-band .ctas {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 1024px) {
+        .svc-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .minerals-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .support-strip {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
+        .page-hero .meta {
+          grid-template-columns: 1fr 1fr;
+        }
+        .b5-header ul.menu {
+          display: none;
+        }
+      }
+      @media (max-width: 640px) {
+        .svc-grid,
+        .minerals-grid,
+        .page-hero .meta {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="b5-header"></div>
+
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="crumbs">
+          <a href="../index.html">B5 Plus</a> &nbsp;/&nbsp; Divisions
+          &nbsp;/&nbsp; Mining
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 40px;
+            align-items: end;
+          "
+        >
+          <div
+            style="
+              font-family: var(--mono);
+              font-size: 11px;
+              letter-spacing: 0.16em;
+              color: rgba(255, 255, 255, 0.6);
+              writing-mode: vertical-rl;
+              transform: rotate(180deg);
+              align-self: start;
+              padding-top: 12px;
+            "
+          >
+            DIVISION · 03
+          </div>
+          <div>
+            <h1>Supplying<br />the mines that<br />move <em>Ghana.</em></h1>
+            <p class="lede">
+              B5 Plus is a single-source industrial partner to West Africa's
+              gold, manganese, bauxite, and aggregate operators — from grinding
+              media and structural steel to site fabrication, PEB camp
+              buildings, and procurement support.
+            </p>
+          </div>
+        </div>
+        <div class="meta">
+          <div class="it">
+            <div class="v">15+</div>
+            <div class="l">Active mine clients</div>
+          </div>
+          <div class="it">
+            <div class="v">24/7</div>
+            <div class="l">Supply &amp; emergency response</div>
+          </div>
+          <div class="it">
+            <div class="v">100%</div>
+            <div class="l">Made-in-Ghana grinding media</div>
+          </div>
+          <div class="it">
+            <div class="v">5,000T</div>
+            <div class="l">Annual fab capacity for mining</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="wrap">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 80px;
+            align-items: start;
+          "
+        >
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span> Why B5 Plus
+            </div>
+            <h2>One <em>partner</em> from<br />shaft to <em>mill.</em></h2>
+          </div>
+          <div>
+            <p>
+              Mines don't have time for fragmented supply chains. B5 Plus
+              consolidates the steel, structures, media, and fabrication a
+              producing mine consumes every day — into a single account, a
+              single delivery programme, and a single phone call.
+            </p>
+            <p style="margin-top: 18px">
+              We hold inventory in Tema, run owned logistics across the West
+              African corridor, and now manufacture grinding media domestically.
+              The result: shorter lead times, lower landed cost, and resilient
+              supply against import volatility.
+            </p>
+            <div
+              style="
+                margin-top: 32px;
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="btn btn-red" href="mailto:mining@b5plusgroup.com"
+                >Mining Procurement Enquiry →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+          "
+        >
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span> Products &amp;
+              Services
+            </div>
+            <h2>What we <em>supply</em><br />to the mines.</h2>
+          </div>
+        </div>
+        <div class="svc-grid">
+          <a href="grinding-media.html" class="svc-card">
+            <div>
+              <span class="num">01</span>
+              <h3>Grinding Media Balls</h3>
+              <p>
+                High-chrome cast media for SAG, ball, and rod mills. 20mm –
+                125mm, 10–32% Cr. Now milled in Ghana.
+              </p>
+            </div>
+            <span class="arr">View Specs →</span>
+          </a>
+
+          <a href="peb.html" class="svc-card">
+            <div>
+              <span class="num">03</span>
+              <h3>PEB Site Buildings</h3>
+              <p>
+                Workshops, warehouses, accommodation blocks, and site offices —
+                designed, fabricated, erected.
+              </p>
+            </div>
+            <span class="arr">PEB Capability →</span>
+          </a>
+          <div class="svc-card">
+            <div>
+              <span class="num">04</span>
+              <h3>Custom Fabrication</h3>
+              <p>
+                Chutes, hoppers, conveyors, and bespoke wear-plate assemblies
+                fabricated to drawing.
+              </p>
+            </div>
+            <span class="arr">Send Drawing →</span>
+          </div>
+          <div class="svc-card">
+            <div>
+              <span class="num">05</span>
+              <h3>Wear-Plate &amp; Liners</h3>
+              <p>
+                Wear-resistant plate, mill liners, and replacement components
+                stocked and supplied.
+              </p>
+            </div>
+            <span class="arr">Enquire →</span>
+          </div>
+          <div class="svc-card">
+            <div>
+              <span class="num">06</span>
+              <h3>Procurement Support</h3>
+              <p>
+                Indent supply, third-party sourcing, and on-the-ground inventory
+                holding for resident engineers.
+              </p>
+            </div>
+            <span class="arr">Contact Procurement →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="minerals-strip">
+      <div class="wrap">
+        <h3>
+          Operating across the <em>minerals</em> that drive the regional economy
+        </h3>
+        <div class="minerals-grid">
+          <div class="mineral">
+            <div class="sym">Au</div>
+            <div class="name">Gold</div>
+          </div>
+          <div class="mineral">
+            <div class="sym">Mn</div>
+            <div class="name">Manganese</div>
+          </div>
+          <div class="mineral">
+            <div class="sym">Bx</div>
+            <div class="name">Bauxite</div>
+          </div>
+          <div class="mineral">
+            <div class="sym">Fe</div>
+            <div class="name">Iron Ore</div>
+          </div>
+          <div class="mineral">
+            <div class="sym">Agg</div>
+            <div class="name">Aggregate &amp; Cement</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap">
+        <div class="support-strip">
+          <div class="visual">
+            <span class="corner">FIG. 03 — TEMA STOCK YARD</span>
+            <span class="label">Drop site logistics shot</span>
+          </div>
+          <div>
+            <div class="eyebrow" style="color: rgba(255, 255, 255, 0.5)">
+              <span class="bars"><i></i><i></i><i></i></span> How we support
+            </div>
+            <h2 style="color: #fff">From <em>order</em> to mine gate.</h2>
+            <ul class="support-list">
+              <li>
+                <span class="num">01</span
+                ><strong>Dedicated mining account manager</strong
+                ><span class="det">Single point of contact</span>
+              </li>
+              <li>
+                <span class="num">02</span
+                ><strong>Held stock at Tema warehouse</strong
+                ><span class="det">Same-day dispatch</span>
+              </li>
+              <li>
+                <span class="num">03</span><strong>Owned trailer fleet</strong
+                ><span class="det">Cross-border logistics</span>
+              </li>
+              <li>
+                <span class="num">04</span
+                ><strong>Inventory consignment programmes</strong
+                ><span class="det">On-mine stocking</span>
+              </li>
+              <li>
+                <span class="num">05</span
+                ><strong>Technical support &amp; field trials</strong
+                ><span class="det">Media optimisation</span>
+              </li>
+              <li>
+                <span class="num">06</span
+                ><strong>QC certificates with every batch</strong
+                ><span class="det">Mill test reports</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <div
+          class="eyebrow"
+          style="justify-content: center; color: rgba(255, 255, 255, 0.7)"
+        >
+          <span class="bars"
+            ><i style="background: #fff"></i><i style="background: #fff"></i
+            ><i style="background: #fff"></i
+          ></span>
+          Mining Procurement
+        </div>
+        <h2>Talk to a <em>mining</em><br />account manager.</h2>
+        <p
+          style="
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 50ch;
+            margin: 0 auto 40px;
+          "
+        >
+          Send your monthly tonnage requirement, mine location, and product
+          spec. We'll return a programme price and a logistics plan.
+        </p>
+        <div class="ctas">
+          <a
+            class="btn"
+            style="background: #fff; color: var(--b5-red)"
+            href="mailto:mining@b5plusgroup.com"
+            >Mining Procurement Enquiry →</a
+          >
+          <a class="btn btn-ghost" href="mailto:mining@b5plusgroup.com"
+            >mining@b5plusgroup.com</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="b5-footer"></div>
+
+    <script src="../assets/include.js"></script>
+    <script>
+      b5Include("#b5-header", "#b5-footer", "../");
+    </script>
+  </body>
+</html>

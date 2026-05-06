@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>B5 Plus Group — Website Redesign Strategy</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style data-screen-label="Strategy">
+body{background:#fff}
+.doc{max-width:880px;margin:0 auto;padding:80px 32px 120px}
+.doc h1{font-size:64px;letter-spacing:-0.03em;line-height:1;margin-bottom:8px}
+.doc h1 em{font-family:var(--serif);font-style:italic;color:var(--b5-red);font-weight:400}
+.doc .meta{font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:48px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.doc h2{font-size:32px;letter-spacing:-0.02em;margin:64px 0 18px;padding-top:40px;border-top:1px solid var(--line)}
+.doc h2 .n{font-family:var(--mono);font-size:14px;color:var(--b5-red);letter-spacing:0.12em;display:block;margin-bottom:6px;font-weight:500}
+.doc h3{font-size:22px;font-weight:600;margin:36px 0 12px;letter-spacing:-0.01em}
+.doc h4{font-size:16px;font-weight:600;margin:24px 0 8px;font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase;color:var(--b5-red)}
+.doc p{font-size:16px;line-height:1.65;color:var(--ink-2);margin:0 0 14px}
+.doc ul,.doc ol{font-size:16px;line-height:1.7;color:var(--ink-2);padding-left:22px;margin:0 0 18px}
+.doc ul li,.doc ol li{margin-bottom:6px}
+.doc strong{color:var(--ink)}
+.doc table{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0 24px}
+.doc table th,.doc table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.doc table th{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);background:var(--paper)}
+.doc .box{background:var(--paper);border-left:3px solid var(--b5-red);padding:20px 24px;margin:18px 0;font-size:15px}
+.doc code{font-family:var(--mono);background:var(--paper);padding:2px 6px;font-size:13px;border-radius:2px}
+.doc .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:16px 0 24px}
+.doc .swatch{aspect-ratio:1;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;font-family:var(--mono);font-size:11px;letter-spacing:0.08em}
+.doc .swatch .name{font-weight:600;display:block;margin-bottom:2px}
+.doc .nav{position:sticky;top:80px;float:right;width:200px;margin:-200px 0 0 60px;font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);line-height:2}
+.doc .nav a:hover{color:var(--b5-red)}
+.doc hr{border:0;border-top:1px solid var(--line);margin:48px 0}
+@media(max-width:1100px){.doc .nav{display:none}.doc{padding-top:48px}}
+</style>
+</head>
+<body>
+<div id="b5-header"></div>
+
+<div class="doc">
+  <div class="eyebrow"><span class="bars"><i></i><i></i><i></i></span> B5 Plus Group · Website Redesign Strategy</div>
+  <h1>From corporate <em>brochure</em> to industrial <em>command centre.</em></h1>
+  <div class="meta">Prepared for B5 Plus Group · Internal · v1.0</div>
+
+  <h2><span class="n">01 — Audit</span>What's wrong with the current site</h2>
+
+  <h4>Outdated visuals</h4>
+  <ul>
+    <li><strong>Generic stock vibe</strong> — round red icons, dotted blob shapes, soft drop-shadows; reads like a SaaS template, not heavy industry.</li>
+    <li><strong>Floating chat-bot, four call buttons, snapping CTAs</strong> all crowd the right rail and damage credibility.</li>
+    <li><strong>"Get a Quote" diagonal pill</strong> is the only confident piece of design — and it gets lost.</li>
+    <li><strong>Inconsistent spacing &amp; type sizing.</strong> No clear scale system; CTAs vary across sections.</li>
+  </ul>
+
+  <h4>Hidden businesses</h4>
+  <ul>
+    <li><strong>PEB</strong> is the visual landing slide but has no top-level nav home.</li>
+    <li><strong>Mining</strong> is invisible — no nav slot, no homepage section, no landing page.</li>
+    <li><strong>Grinding Media Balls</strong> — your newest and most strategic division — appears nowhere.</li>
+    <li><strong>Trailers, Tankers, Chemicals, Turnkey</strong> live inside a "Products" mega-menu that nobody opens.</li>
+  </ul>
+
+  <h4>Missing pages / sections</h4>
+  <ul>
+    <li>Dedicated landing pages for Mining, Grinding Media, PEB sub-applications.</li>
+    <li>Project / Case-study library (you have the projects — show them).</li>
+    <li>Spec sheets &amp; downloadable PDFs per product family.</li>
+    <li>Real lead capture beyond a single "Get in Touch" button.</li>
+    <li>News / Plant updates (Grinding Media plant launch — major news, missing).</li>
+  </ul>
+
+  <h4>Weak content</h4>
+  <ul>
+    <li>"Get quality iron and steel" — vague, generic, replaceable with any competitor.</li>
+    <li>Mission/Vision/Values are corporate-speak. Real differentiators (Made in Ghana, vertically integrated, owned logistics, new media plant) are buried.</li>
+    <li>No tonnages, no specs, no proof points beyond "Certified &amp; Award Winner".</li>
+  </ul>
+
+  <h4>Competitor gap</h4>
+  <table>
+    <thead><tr><th>Dimension</th><th>Strong competitors</th><th>B5 today</th><th>Redesign closes</th></tr></thead>
+    <tbody>
+      <tr><td>Visual design</td><td>Editorial, photographic, large type</td><td>Template feel</td><td>Industrial editorial system</td></tr>
+      <tr><td>Product depth</td><td>Spec sheets, grades, data tables</td><td>Tags &amp; one-line descriptions</td><td>Full spec table on each product page</td></tr>
+      <tr><td>Trust building</td><td>Tonnages, projects, named clients</td><td>"Award winner"</td><td>Project portfolio, named projects, output stats</td></tr>
+      <tr><td>Lead generation</td><td>Per-division forms, instant WhatsApp</td><td>One contact form</td><td>Per-division email + WhatsApp + sticky CTA</td></tr>
+      <tr><td>Mining presence</td><td>Dedicated site verticals</td><td>None</td><td>Mining hub + Grinding Media flagship</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="n">02 — Sitemap</span>The new information architecture</h2>
+<pre style="font-family:var(--mono);font-size:13px;background:var(--paper);padding:24px;line-height:1.8;overflow:auto">
+Home
+├── Our Organization
+│   ├── About B5 Plus
+│   ├── Leadership / CEO Message
+│   ├── Vision · Mission · Values
+│   ├── Awards &amp; Certifications
+│   └── Plants &amp; Facilities
+├── Steel  ←  flagship
+│   ├── TMT Rebar
+│   ├── Structural Sections
+│   ├── Wire Rod
+│   ├── Plates &amp; Flat Bar
+│   └── Steel Trading
+├── Pre-Engineered Buildings (PEB)  ←  prominent
+│   ├── Warehouses &amp; Distribution
+│   ├── Factories &amp; Industrial
+│   ├── Cold Storage
+│   ├── Bridges
+│   ├── Prefabricated Houses
+│   ├── Containers (Custom)
+│   ├── Cranes &amp; Hoists
+│   └── Process &amp; Capability
+├── Mining  ←  prominent
+│   ├── Grinding Media Balls  ←  flagship sub-page
+│   ├── Structural Steel for Mines
+│   ├── PEB Site Buildings
+│   ├── Custom Fabrication
+│   └── Procurement Support
+├── Other Divisions
+│   ├── Trailers &amp; Tankers
+│   ├── Industrial Chemicals
+│   └── Turnkey Projects
+├── Projects (Case studies)
+├── Beyond Business (CSR)
+├── News &amp; Media
+├── Careers
+└── Contact / Request a Quote
+</pre>
+
+  <h2><span class="n">03 — Page Plan</span>Page-by-page content brief</h2>
+
+  <h3>Home — <code>/</code></h3>
+  <p><strong>Purpose:</strong> Position B5 Plus as West Africa's leading vertically integrated industrial group. Surface every division. Push grinding media plant launch. Drive quote requests.</p>
+  <p><strong>Sections:</strong> Hero · About strip · Grinding Media flagship · 8-division grid · PEB feature band · Mining feature band · Selected projects · Certifications · CSR · Contact CTA · Footer.</p>
+  <p><strong>SEO Title:</strong> B5 Plus Group — Iron, Steel &amp; Industrial Manufacturing in West Africa</p>
+  <p><strong>Meta:</strong> West Africa's leading iron, steel, PEB, mining, and turnkey industrial group. Headquartered in Tema, Ghana since 2002. Now producing grinding media balls.</p>
+
+  <h3>Steel — <code>/steel</code></h3>
+  <p><strong>Purpose:</strong> Convert procurement managers, contractors, traders. Show full catalogue, standards compliance, trading capability.</p>
+  <p><strong>Sections:</strong> Hero · 8 product families · Standards row · Trading desk · BOQ CTA.</p>
+  <p><strong>SEO Title:</strong> Iron &amp; Steel Manufacturing — B5 Plus Group | Tema, Ghana</p>
+
+  <h3>PEB — <code>/peb</code></h3>
+  <p><strong>Purpose:</strong> Demonstrate end-to-end PEB capability. Capture engineering and design enquiries.</p>
+  <p><strong>Sections:</strong> Hero with metrics · Capability narrative · 8 application cards (warehouses, factories, cold storage, bridges, prefab houses, containers, cranes, industrial buildings) · 5-step process · CTA band.</p>
+  <p><strong>SEO Title:</strong> Pre-Engineered Buildings (PEB) — B5 Plus Group | West Africa</p>
+
+  <h3>Mining — <code>/mining</code></h3>
+  <p><strong>Purpose:</strong> Position B5 as a single-source supplier to mining ops. Capture procurement &amp; resident engineer enquiries.</p>
+  <p><strong>Sections:</strong> Hero with metrics · Why B5 narrative · 6 product/service cards · Minerals served strip · Operational support list · Procurement CTA.</p>
+  <p><strong>SEO Title:</strong> Mining Products &amp; Services — B5 Plus Group | Grinding Media, Steel, PEB</p>
+
+  <h3>Grinding Media Balls — <code>/grinding-media</code></h3>
+  <p><strong>Purpose:</strong> Launch the new plant. Lock in mining procurement enquiries.</p>
+  <p><strong>Sections:</strong> Hero with "Plant Live" badge · Why local matters · Full spec table · 6 benefits · 4 industries · Quality &amp; testing · Sample/quote CTA.</p>
+  <p><strong>SEO Title:</strong> Grinding Media Balls — B5 Plus Group | Now Milled in Ghana</p>
+
+  <h3>Contact — <code>/contact</code></h3>
+  <p><strong>Purpose:</strong> Single accountable lead-capture surface. Direct phone/email per division.</p>
+  <p><strong>Sections:</strong> Form (with division picker) · Side panel (sales, PEB, email, WhatsApp, address) · Department directory.</p>
+
+  <h2><span class="n">04 — Design Direction</span>The system</h2>
+
+  <h4>Color palette</h4>
+  <div class="palette">
+    <div class="swatch" style="background:#C8102E;color:#fff"><span class="name">B5 Red</span>#C8102E</div>
+    <div class="swatch" style="background:#1E3A8A;color:#fff"><span class="name">Royal Blue</span>#1E3A8A</div>
+    <div class="swatch" style="background:#0A0A0B;color:#fff"><span class="name">Ink</span>#0A0A0B</div>
+    <div class="swatch" style="background:#F6F4EF;color:#0a0a0b;border:1px solid var(--line)"><span class="name">Paper</span>#F6F4EF</div>
+    <div class="swatch" style="background:#fff;color:#0a0a0b;border:1px solid var(--line)"><span class="name">White</span>#FFFFFF</div>
+  </div>
+  <p>Red is the only action color. Blue is reserved for editorial blocks and certifications. Ink is the dominant industrial surface; paper is the editorial counterweight.</p>
+
+  <h4>Typography</h4>
+  <ul>
+    <li><strong>Inter Tight</strong> — UI, body, buttons, eyebrows. Tight tracking, modern, neutral.</li>
+    <li><strong>Fraunces (italic)</strong> — accent words inside headlines. Adds editorial confidence.</li>
+    <li><strong>JetBrains Mono</strong> — figure callouts, eyebrows, specs, tags. Reads as technical drawing.</li>
+  </ul>
+
+  <h4>Imagery style</h4>
+  <ul>
+    <li>Plant photography — molten steel, rolling mill, hot-end, finishing. Dark, dramatic, low-key.</li>
+    <li>Product photography — neutral grey, top-down or three-quarter, with mono callouts.</li>
+    <li>Site photography — wide drone shots of completed PEB structures.</li>
+    <li><strong>No stock photos. No clip art. No emoji.</strong></li>
+  </ul>
+
+  <h4>Layout principles</h4>
+  <ul>
+    <li>Editorial, not corporate. Large type. Generous negative space.</li>
+    <li>Tabular grids over decorative cards. Borders over shadows.</li>
+    <li>One accent per surface. Restraint over decoration.</li>
+    <li>Numbered indices everywhere — <code>01 / 02 / 03</code> — communicates rigour.</li>
+  </ul>
+
+  <h4>Mobile direction</h4>
+  <ul>
+    <li>Hamburger nav with full-bleed dark drawer.</li>
+    <li>Sticky bottom bar with WhatsApp + Phone + Quote.</li>
+    <li>Hero collapses to single column; stats stack 2x2.</li>
+    <li>Grids collapse to single column at 640px; 2-col at 1024px.</li>
+  </ul>
+
+  <h2><span class="n">05 — Lead Capture</span>How leads come in</h2>
+  <p>Three layers — pick the most accessible to the buyer:</p>
+  <ol>
+    <li><strong>Sticky floating cluster</strong> (bottom-right): WhatsApp, Phone, Email — present on every page.</li>
+    <li><strong>Header CTA</strong>: "Request a Quote" — leads to a single form with a division picker.</li>
+    <li><strong>Per-division CTA bands</strong> at the bottom of each landing page — pre-filled with division context.</li>
+  </ol>
+  <div class="box">Every division has its own email alias (<code>steel@</code>, <code>peb@</code>, <code>mining@</code>, <code>grinding@</code>) so leads route directly to the right desk without a triage step.</div>
+
+  <h2><span class="n">06 — SEO &amp; Meta</span>Per-page meta</h2>
+  <table>
+    <thead><tr><th>Page</th><th>Title (≤60ch)</th><th>Meta description (≤155ch)</th></tr></thead>
+    <tbody>
+      <tr><td>Home</td><td>B5 Plus Group — Iron, Steel &amp; Industrial Manufacturing</td><td>West Africa's leading iron, steel, PEB, mining, and turnkey industrial group. Headquartered in Tema, Ghana since 2002.</td></tr>
+      <tr><td>Steel</td><td>Iron &amp; Steel Manufacturing — B5 Plus Group</td><td>Rebar, sections, wire rod, plates and merchant bar — produced at our Tema mill to BS, IS, ASTM, and EN standards.</td></tr>
+      <tr><td>PEB</td><td>Pre-Engineered Buildings (PEB) — B5 Plus Group</td><td>Designed, fabricated, and erected. Warehouses, factories, cold storage, bridges, prefab houses across West Africa.</td></tr>
+      <tr><td>Mining</td><td>Mining Products &amp; Services — B5 Plus Group</td><td>Grinding media, structural steel, PEB site buildings, fabrication and procurement for West African mining operations.</td></tr>
+      <tr><td>Grinding</td><td>Grinding Media Balls — B5 Plus | Now Milled in Ghana</td><td>High-chrome grinding media balls. 20-125mm, 10-32% Cr, HRC 58-65. Forged for SAG, ball, and rod mills across West Africa.</td></tr>
+      <tr><td>Contact</td><td>Contact &amp; Request a Quote — B5 Plus Group</td><td>Send a BOQ, sketch, or use case. Direct lines to sales, engineering, and procurement teams in Tema, Ghana.</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="n">07 — Developer Notes</span>Implementation</h2>
+  <ul>
+    <li>Static HTML reference build provided in this project — see <code>index.html</code>, <code>pages/peb.html</code>, <code>pages/mining.html</code>, <code>pages/grinding-media.html</code>, <code>pages/steel.html</code>, <code>pages/contact.html</code>.</li>
+    <li>Shared design system in <code>assets/styles.css</code>.</li>
+    <li>Header &amp; footer partials in <code>assets/header.html</code> and <code>assets/footer.html</code>; included via <code>assets/include.js</code>.</li>
+    <li>Recommended CMS: WordPress (with ACF) or Webflow — simple enough for marketing edits, structured enough for a 30-page site.</li>
+    <li>Form handling: pipe to HubSpot or Zoho with division-routed notifications.</li>
+    <li>Performance budget: &lt;200KB JS, lazy-loaded photography, served via CDN. Aim for LCP &lt; 2.0s.</li>
+    <li>Add structured data — Organization, Product, BreadcrumbList — for rich results.</li>
+    <li>WhatsApp click-to-chat link present on every page; phone <code>tel:</code> links on every page.</li>
+  </ul>
+
+  <h2><span class="n">08 — What to do next</span>Hand-off checklist</h2>
+  <ol>
+    <li>Schedule plant photography (mill hot-end, grinding media plant, PEB fabrication, site erection, projects). Approx. 2-day shoot, 1 photographer.</li>
+    <li>Collect named project list with photos for the Projects page (target: 12 case studies).</li>
+    <li>Finalise grinding media spec sheet PDF + mill test report template.</li>
+    <li>Confirm division email aliases with IT.</li>
+    <li>Sign off copy, then move to CMS build.</li>
+  </ol>
+</div>
+
+<div id="b5-footer"></div>
+<script src="assets/include.js"></script>
+<script>b5Include('#b5-header','#b5-footer','');</script>
+</body>
+</html>

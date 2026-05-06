@@ -1,0 +1,3439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      B5 Plus Group — The Backbone of Africa's Growth | Iron, Steel, PEB, Mining
+      &amp; Grinding Media
+    </title>
+    <meta
+      name="description"
+      content="B5 Plus Limited — Ghana-headquartered leader in iron &amp; steel manufacturing, Pre-Engineered Buildings (PEB), mining products, and grinding media balls. Serving West Africa since 2002."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --red: #c8102e;
+        --red-2: #9a0b22;
+        --blue: #1e3a8a;
+        --blue-2: #0f1f4d;
+        --ink: #0f1115;
+        --ink-2: #1a1d24;
+        --paper: #ffffff;
+        --soft: #f4f5f7;
+        --soft-2: #edeff3;
+        --line: rgba(15, 17, 21, 0.1);
+        --muted: #5c6272;
+        --sans: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      body {
+        font-family: var(--sans);
+        color: var(--ink);
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.5;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      .wrap {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+      @media (max-width: 640px) {
+        .wrap {
+          padding: 0 18px;
+        }
+      }
+
+      /* ===== TOP STRIP ===== */
+      .top-strip {
+        background: var(--ink);
+        color: #fff;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .top-strip .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 34px;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .top-strip .live {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--red);
+        padding: 0 12px;
+        height: 34px;
+      }
+      .top-strip .live .dot {
+        width: 6px;
+        height: 6px;
+        background: #fff;
+        border-radius: 50%;
+        animation: pulse 1.6s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+      }
+      .top-strip .links {
+        display: flex;
+        gap: 22px;
+        opacity: 0.85;
+      }
+
+      /* ===== HEADER ===== */
+      header.site {
+        position: sticky;
+        top: 0;
+        z-index: 60;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      header.site .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 88px;
+        gap: 16px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+      .logo .mark {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background: #fff;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+      }
+      .logo .mark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .logo .name {
+        font-weight: 800;
+        font-size: 19px;
+        letter-spacing: -0.02em;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .logo .name sup {
+        color: var(--red);
+        font-size: 11px;
+        margin-left: 1px;
+      }
+      .logo .tag {
+        font-family: var(--mono);
+        font-size: 9px;
+        letter-spacing: 0.16em;
+        color: var(--blue);
+        text-transform: uppercase;
+        margin-top: 4px;
+        white-space: nowrap;
+      }
+      nav.menu {
+        display: flex;
+        align-items: center;
+        gap: 0;
+      }
+      nav.menu a {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 10px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: var(--ink);
+        position: relative;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+      nav.menu a:hover {
+        color: var(--red);
+      }
+      nav.menu a.active {
+        color: var(--red);
+      }
+      nav.menu a.active::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 4px;
+        height: 2px;
+        background: var(--red);
+      }
+      nav.menu a .caret {
+        font-size: 8px;
+        opacity: 0.5;
+      }
+      nav.menu a .pill {
+        font-family: var(--mono);
+        font-size: 8.5px;
+        background: var(--red);
+        color: #fff;
+        padding: 2px 5px;
+        letter-spacing: 0.12em;
+        border-radius: 1px;
+      }
+      .quote-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--red);
+        color: #fff;
+        padding: 14px 20px;
+        font-weight: 700;
+        font-size: 12.5px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+        transition: background 0.2s;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+      .quote-cta:hover {
+        background: var(--ink);
+      }
+      .menu-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1px solid var(--line);
+        cursor: pointer;
+        flex-shrink: 0;
+      }
+      .menu-toggle span {
+        width: 20px;
+        height: 2px;
+        background: var(--ink);
+        position: relative;
+        transition: all 0.2s;
+      }
+      .menu-toggle span::before,
+      .menu-toggle span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background: var(--ink);
+        transition: all 0.2s;
+      }
+      .menu-toggle span::before {
+        top: -6px;
+      }
+      .menu-toggle span::after {
+        top: 6px;
+      }
+      .menu-toggle.open span {
+        background: transparent;
+      }
+      .menu-toggle.open span::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      .menu-toggle.open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+      @media (max-width: 1240px) {
+        .logo .tag {
+          display: none;
+        }
+        nav.menu a {
+          padding: 10px 8px;
+          font-size: 12.5px;
+        }
+        .quote-cta {
+          padding: 13px 16px;
+          font-size: 11.5px;
+        }
+      }
+      @media (max-width: 1100px) {
+        header.site nav.menu {
+          display: none;
+          position: fixed;
+          top: 88px;
+          left: 0;
+          right: 0;
+          background: #fff;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+          padding: 8px 24px 24px;
+          border-bottom: 1px solid var(--line);
+          box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+          z-index: 55;
+          max-height: calc(100vh - 88px);
+          overflow-y: auto;
+        }
+        header.site nav.menu.open {
+          display: flex;
+        }
+        nav.menu a {
+          padding: 14px 4px;
+          font-size: 15px;
+          border-bottom: 1px solid var(--line);
+        }
+        nav.menu a.active::after {
+          display: none;
+        }
+        nav.menu a.active {
+          border-left: 3px solid var(--red);
+          padding-left: 12px;
+        }
+        .menu-toggle {
+          display: inline-flex;
+          margin-left: auto;
+        }
+        .quote-cta {
+          display: none;
+        }
+      }
+      @media (max-width: 560px) {
+        .logo .name {
+          font-size: 16px;
+        }
+        header.site .bar {
+          height: 72px;
+        }
+        header.site nav.menu {
+          top: 72px;
+        }
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        position: relative;
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        min-height: 760px;
+        display: flex;
+        align-items: center;
+      }
+      .hero .bg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            60% 80% at 70% 50%,
+            rgba(200, 16, 46, 0.18),
+            transparent 60%
+          ),
+          linear-gradient(180deg, #0a0a0c 0%, #1a1d22 60%, #0a0a0c 100%);
+      }
+      .hero .bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.04) 0 1px,
+            transparent 1px 80px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.04) 0 1px,
+            transparent 1px 80px
+          );
+        mask-image: radial-gradient(
+          ellipse at center,
+          #000 30%,
+          transparent 80%
+        );
+      }
+      .hero .photo-strip {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 55%;
+        background: #0a0a0c;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+        overflow: hidden;
+      }
+      .hero .photo-strip img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.55;
+      }
+      .hero .photo-strip::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            90deg,
+            #0a0a0c 0%,
+            rgba(10, 10, 12, 0.5) 30%,
+            transparent 60%
+          ),
+          radial-gradient(
+            circle at 70% 30%,
+            rgba(255, 140, 40, 0.35),
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 30% 70%,
+            rgba(200, 16, 46, 0.3),
+            transparent 60%
+          );
+      }
+      .hero .photo-strip::after {
+        content: "PHOTO · STEEL MILL — HOT-ROLLING LINE, TEMA";
+        position: absolute;
+        left: 24px;
+        bottom: 18px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+      }
+      .hero .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 80px 0 100px;
+      }
+      .hero .grid {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 60px;
+        align-items: end;
+      }
+      .hero .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-family: var(--mono);
+        font-size: 11.5px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 32px;
+      }
+      .hero .eyebrow .bars {
+        display: inline-flex;
+        gap: 3px;
+      }
+      .hero .eyebrow .bars i {
+        width: 14px;
+        height: 2px;
+        background: var(--red);
+      }
+      .hero .eyebrow .bars i:nth-child(2) {
+        width: 8px;
+      }
+      .hero .eyebrow .bars i:nth-child(3) {
+        width: 4px;
+      }
+      .hero h1 {
+        font-size: clamp(48px, 7vw, 108px);
+        line-height: 0.95;
+        letter-spacing: -0.03em;
+        font-weight: 800;
+        margin: 0;
+      }
+      .hero h1 .swap {
+        color: var(--red);
+        font-style: italic;
+        font-weight: 700;
+      }
+      .hero h1 .uline {
+        position: relative;
+        display: inline-block;
+      }
+      .hero h1 .uline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 6px;
+        height: 6px;
+        background: var(--red);
+        opacity: 0.85;
+      }
+      .hero .lede {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.78);
+        max-width: 48ch;
+        margin-top: 28px;
+        line-height: 1.55;
+      }
+      .hero .ctas {
+        display: flex;
+        gap: 14px;
+        margin-top: 36px;
+        flex-wrap: wrap;
+      }
+      .btn-red {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--red);
+        color: #fff;
+        padding: 18px 28px;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+        transition: background 0.2s;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      .btn-red:hover {
+        background: var(--red-2);
+      }
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: #fff;
+        padding: 18px 28px;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.2s;
+      }
+      .btn-ghost:hover {
+        background: #fff;
+        color: var(--ink);
+        border-color: #fff;
+      }
+      /* Hero stats */
+      .hero .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        margin-top: 80px;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .hero .stats .s {
+        padding: 26px 24px 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .hero .stats .s:last-child {
+        border-right: none;
+      }
+      .hero .stats .n {
+        font-size: 44px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+      .hero .stats .n .u {
+        color: var(--red);
+        font-size: 24px;
+        margin-left: 2px;
+      }
+      .hero .stats .l {
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 8px;
+        line-height: 1.4;
+      }
+      /* Hero side card (Grinding launch) */
+      .hero .launch {
+        position: relative;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 28px;
+        border-radius: 2px;
+        max-width: 420px;
+        justify-self: end;
+      }
+      .hero .launch::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--red);
+      }
+      .hero .launch .label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #fff;
+        background: var(--red);
+        padding: 6px 10px;
+        margin-bottom: 18px;
+      }
+      .hero .launch h3 {
+        font-size: 26px;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+        line-height: 1.1;
+      }
+      .hero .launch p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0 0 22px;
+        line-height: 1.55;
+      }
+      .hero .launch .specs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+        padding-top: 16px;
+      }
+      .hero .launch .specs div .k {
+        font-family: var(--mono);
+        font-size: 9.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .hero .launch .specs div .v {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin-top: 2px;
+      }
+      .hero .launch a.cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--red);
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 18px;
+      }
+      .hero .launch a.cta:hover {
+        color: #fff;
+      }
+      @media (max-width: 1100px) {
+        .hero .photo-strip {
+          display: none;
+        }
+        .hero .grid {
+          grid-template-columns: 1fr;
+        }
+        .hero .launch {
+          justify-self: stretch;
+          max-width: none;
+        }
+      }
+
+      /* ===== MARQUEE ===== */
+      .marquee {
+        overflow: hidden;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: #fff;
+      }
+      .marquee .track {
+        display: flex;
+        gap: 64px;
+        padding: 18px 0;
+        animation: scroll 50s linear infinite;
+        white-space: nowrap;
+      }
+      .marquee .track span {
+        font-family: var(--mono);
+        font-size: 13px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-2);
+        display: inline-flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .marquee .track span::after {
+        content: "●";
+        color: var(--red);
+        margin-left: 50px;
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* ===== UNIVERSAL SECTION ===== */
+      section {
+        padding: 110px 0;
+        position: relative;
+      }
+      section.tight {
+        padding: 80px 0;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .eyebrow .bars {
+        display: inline-flex;
+        gap: 3px;
+      }
+      .eyebrow .bars i {
+        width: 14px;
+        height: 2px;
+        background: var(--red);
+      }
+      .eyebrow .bars i:nth-child(2) {
+        width: 8px;
+      }
+      .eyebrow .bars i:nth-child(3) {
+        width: 4px;
+      }
+      h2 {
+        font-size: clamp(34px, 4.6vw, 64px);
+        letter-spacing: -0.025em;
+        line-height: 1.05;
+        margin: 0;
+        font-weight: 800;
+      }
+      h2 .red {
+        color: var(--red);
+      }
+      .lede {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #3a3f4a;
+        max-width: 62ch;
+      }
+
+      /* ===== ABOUT ===== */
+      .about {
+        background: #fff;
+      }
+      .about .grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .about .photos {
+        position: relative;
+        height: 560px;
+      }
+      .about .photos .ph {
+        position: absolute;
+        background: #1a1d24;
+        overflow: hidden;
+      }
+      .about .photos .ph img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .about .photos .ph::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.04) 0 2px,
+          transparent 2px 14px
+        );
+      }
+      .about .photos .ph .lab {
+        position: absolute;
+        left: 14px;
+        bottom: 12px;
+        color: rgba(255, 255, 255, 0.55);
+        font-family: var(--mono);
+        font-size: 9.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .about .photos .ph.a {
+        left: 0;
+        top: 0;
+        width: 62%;
+        height: 380px;
+        background: linear-gradient(135deg, #1c1c20, #3a3a40);
+      }
+      .about .photos .ph.b {
+        right: 0;
+        top: 120px;
+        width: 50%;
+        height: 340px;
+        background: linear-gradient(135deg, #3a1a0a, #8a3a14 60%, #c8431c);
+      }
+      .about .photos .ph.c {
+        left: 30px;
+        bottom: 0;
+        width: 40%;
+        height: 200px;
+        background: linear-gradient(135deg, #0f1f4d, #1e3a8a);
+      }
+      .about .photos .badge {
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        background: var(--red);
+        color: #fff;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        line-height: 1.3;
+        font-weight: 600;
+        z-index: 5;
+        transform: rotate(-8deg);
+      }
+      .about .photos .badge strong {
+        display: block;
+        font-size: 32px;
+        letter-spacing: -0.02em;
+        font-family: var(--sans);
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .about h2 {
+        margin-bottom: 24px;
+      }
+      .about .checklist {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .about .checklist .it {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+      }
+      .about .checklist .it svg {
+        flex-shrink: 0;
+        color: var(--red);
+        margin-top: 2px;
+      }
+      .about .checklist .it .t {
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .about .checklist .it .d {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+      .about .ceo {
+        margin-top: 36px;
+        padding: 24px;
+        background: var(--soft);
+        border-left: 3px solid var(--red);
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+      .about .ceo .av {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #1e3a8a, #0f1f4d);
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 22px;
+      }
+      .about .ceo .q {
+        font-size: 15px;
+        color: var(--ink-2);
+        font-style: italic;
+        line-height: 1.5;
+      }
+      .about .ceo .a {
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 6px;
+      }
+      @media (max-width: 980px) {
+        .about .grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .about .photos {
+          height: auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+        .about .photos .ph,
+        .about .photos .ph.a,
+        .about .photos .ph.b,
+        .about .photos .ph.c {
+          position: relative;
+          left: auto;
+          right: auto;
+          top: auto;
+          bottom: auto;
+          width: 100%;
+          height: 220px;
+          margin: 0;
+        }
+        .about .photos .badge {
+          display: none;
+        }
+        .about .checklist {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 560px) {
+        .about .photos .ph.c {
+          display: none;
+        }
+        .about .photos .ph,
+        .about .photos .ph.a,
+        .about .photos .ph.b {
+          height: 200px;
+        }
+      }
+
+      /* ===== DIVISIONS ===== */
+      .divisions {
+        background: var(--soft);
+      }
+      .divisions .head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+      }
+      .divisions .head .t {
+        max-width: 560px;
+      }
+      .divisions .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--line);
+      }
+      .divisions .card {
+        position: relative;
+        background: #fff;
+        padding: 32px 28px 28px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition:
+          background 0.2s,
+          color 0.2s;
+        cursor: pointer;
+      }
+      .divisions .card .num {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+      }
+      .divisions .card h3 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+        margin: 24px 0 8px;
+      }
+      .divisions .card p {
+        font-size: 14px;
+        color: var(--muted);
+        margin: 0;
+        line-height: 1.5;
+      }
+      .divisions .card .arr {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink);
+        margin-top: 24px;
+        font-weight: 600;
+      }
+      .divisions .card .arr svg {
+        transition: transform 0.2s;
+      }
+      .divisions .card:hover {
+        background: var(--ink);
+        color: #fff;
+      }
+      .divisions .card:hover .num,
+      .divisions .card:hover p {
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .divisions .card:hover .arr {
+        color: var(--red);
+      }
+      .divisions .card:hover .arr svg {
+        transform: translateX(4px);
+      }
+      .divisions .card.feat {
+        background: var(--red);
+        color: #fff;
+      }
+      .divisions .card.feat .num,
+      .divisions .card.feat p {
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .divisions .card.feat .arr {
+        color: #fff;
+      }
+      .divisions .card.feat:hover {
+        background: var(--red-2);
+      }
+      .divisions .card.feat .badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        font-family: var(--mono);
+        font-size: 9.5px;
+        letter-spacing: 0.14em;
+        background: #fff;
+        color: var(--red);
+        padding: 4px 8px;
+        font-weight: 700;
+      }
+      @media (max-width: 1100px) {
+        .divisions .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* ===== FLAGSHIP GRINDING ===== */
+      .grinding {
+        background: #0a0a0c;
+        color: #fff;
+        padding: 140px 0;
+        overflow: hidden;
+        position: relative;
+      }
+      .grinding::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          60% 80% at 80% 50%,
+          rgba(200, 16, 46, 0.18),
+          transparent 60%
+        );
+      }
+      .grinding .grid {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 80px;
+        align-items: center;
+        position: relative;
+      }
+      .grinding .visual {
+        position: relative;
+        height: 560px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: #0a0a0c;
+        overflow: hidden;
+      }
+      .grinding .visual img.hero-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.85;
+      }
+      .grinding .visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at 30% 40%,
+            rgba(200, 16, 46, 0.4),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 70% 70%,
+            rgba(255, 140, 40, 0.2),
+            transparent 50%
+          );
+      }
+      /* Forged spheres SVG-like */
+      .grinding .visual .ball {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 30% 30%,
+          #6a6a72,
+          #2a2a32 60%,
+          #0a0a0c 100%
+        );
+        box-shadow:
+          inset -10px -10px 20px rgba(0, 0, 0, 0.5),
+          0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .grinding .visual .ball.b1 {
+        width: 240px;
+        height: 240px;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .grinding .visual .ball.b2 {
+        width: 160px;
+        height: 160px;
+        right: 18%;
+        top: 30%;
+      }
+      .grinding .visual .ball.b3 {
+        width: 120px;
+        height: 120px;
+        right: 30%;
+        bottom: 18%;
+      }
+      .grinding .visual .lab {
+        position: absolute;
+        left: 20px;
+        bottom: 18px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .grinding .visual .corner {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        color: var(--red);
+      }
+      .grinding .eyebrow {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .grinding h2 {
+        margin-bottom: 20px;
+      }
+      .grinding .lede {
+        color: rgba(255, 255, 255, 0.78);
+        max-width: 54ch;
+      }
+      .grinding .specs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .grinding .specs .it {
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .grinding .specs .it:nth-child(odd) {
+        padding-right: 24px;
+        border-right: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .grinding .specs .it:nth-child(even) {
+        padding-left: 24px;
+      }
+      .grinding .specs .k {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .grinding .specs .v {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+      }
+      .grinding .ctas {
+        display: flex;
+        gap: 14px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 980px) {
+        .grinding .grid {
+          grid-template-columns: 1fr;
+        }
+        .grinding .visual {
+          height: 380px;
+        }
+      }
+
+      /* ===== PEB ===== */
+      .peb {
+        background: #fff;
+      }
+      .peb .grid {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 70px;
+        align-items: center;
+      }
+      .peb .visual {
+        position: relative;
+        height: 580px;
+        background: #0f1f4d;
+        overflow: hidden;
+      }
+      .peb .visual img.hero-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .peb .visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.04) 0 1px,
+            transparent 1px 20px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.04) 0 1px,
+            transparent 1px 20px
+          );
+      }
+      /* Building silhouette */
+      .peb .visual .silo {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        bottom: 18%;
+        height: 55%;
+      }
+      .peb .visual .silo .roof {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 30%;
+        background: linear-gradient(180deg, #fff 0, #d8dde6 100%);
+        clip-path: polygon(0 100%, 50% 0, 100% 100%);
+      }
+      .peb .visual .silo .body {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        top: 30%;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.85);
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 0;
+      }
+      .peb .visual .silo .body i {
+        border-right: 1px solid rgba(15, 31, 77, 0.3);
+      }
+      .peb .visual .silo .body i:last-child {
+        border-right: none;
+      }
+      .peb .visual .silo::after {
+        content: "";
+        position: absolute;
+        left: -2%;
+        right: -2%;
+        bottom: -2%;
+        height: 6px;
+        background: var(--red);
+      }
+      .peb .visual .lab {
+        position: absolute;
+        left: 20px;
+        bottom: 18px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .peb .visual .corner {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .peb .apps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background: var(--line);
+        margin-top: 40px;
+        border: 1px solid var(--line);
+      }
+      .peb .apps .it {
+        background: #fff;
+        padding: 18px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .peb .apps .it .dot {
+        width: 8px;
+        height: 8px;
+        background: var(--red);
+      }
+      @media (max-width: 980px) {
+        .peb .grid {
+          grid-template-columns: 1fr;
+        }
+        .peb .visual {
+          height: 380px;
+        }
+      }
+
+      /* ===== MINING ===== */
+      .mining {
+        background: var(--ink);
+        color: #fff;
+        padding: 120px 0;
+        overflow: hidden;
+      }
+      .mining .grid {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .mining .eyebrow {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .mining .lede {
+        color: rgba(255, 255, 255, 0.78);
+        max-width: 50ch;
+      }
+      .mining .visual {
+        position: relative;
+        height: 520px;
+        background: #3a2418;
+        overflow: hidden;
+      }
+      .mining .visual img.hero-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .mining .visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 30% 70%,
+          rgba(0, 0, 0, 0.4),
+          transparent 60%
+        );
+      }
+      .mining .visual::after {
+        content: "";
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        bottom: 0;
+        height: 60%;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6));
+        clip-path: polygon(
+          0 60%,
+          18% 30%,
+          38% 50%,
+          58% 20%,
+          78% 45%,
+          100% 25%,
+          100% 100%,
+          0 100%
+        );
+      }
+      .mining .visual .lab {
+        position: absolute;
+        left: 20px;
+        bottom: 18px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+        z-index: 2;
+      }
+      .mining .visual .corner {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        color: rgba(255, 255, 255, 0.7);
+        z-index: 2;
+      }
+      .mining .list {
+        margin-top: 40px;
+      }
+      .mining .list .it {
+        display: grid;
+        grid-template-columns: 60px 1fr auto;
+        gap: 24px;
+        align-items: center;
+        padding: 22px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .mining .list .it:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .mining .list .n {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .mining .list .t {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: -0.01em;
+      }
+      .mining .list .t span {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 8px;
+      }
+      .mining .list .arr {
+        color: var(--red);
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      @media (max-width: 980px) {
+        .mining .grid {
+          grid-template-columns: 1fr;
+        }
+        .mining .visual {
+          height: 340px;
+        }
+      }
+
+      /* ===== STATS BAND ===== */
+      .stats-band {
+        background: var(--red);
+        color: #fff;
+        padding: 80px 0;
+      }
+      .stats-band .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        align-items: center;
+      }
+      .stats-band .it {
+        padding: 0 32px;
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+      }
+      .stats-band .it:last-child {
+        border-right: none;
+      }
+      .stats-band .n {
+        font-size: 64px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1;
+      }
+      .stats-band .n .u {
+        font-size: 36px;
+      }
+      .stats-band .l {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        margin-top: 12px;
+        opacity: 0.92;
+      }
+      @media (max-width: 980px) {
+        .stats-band .grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 32px;
+        }
+        .stats-band .it {
+          border-right: none;
+          padding: 0 16px;
+        }
+      }
+
+      /* ===== PROJECTS ===== */
+      .projects {
+        background: #fff;
+      }
+      .projects .head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+      }
+      .projects .grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        grid-template-rows: repeat(2, 300px);
+        gap: 18px;
+      }
+      .projects .card {
+        position: relative;
+        overflow: hidden;
+        background: #1a1a1d;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 24px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .projects .card img.bg-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+      .projects .card:hover {
+        transform: translateY(-4px);
+      }
+      .projects .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          transparent 40%,
+          rgba(0, 0, 0, 0.85)
+        );
+      }
+      .projects .card .lab {
+        position: relative;
+        z-index: 2;
+      }
+      .projects .card .tag {
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--red);
+        margin-bottom: 6px;
+      }
+      .projects .card h4 {
+        margin: 0;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+      }
+      .projects .card p {
+        margin: 6px 0 0;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .projects .card.big {
+        grid-row: span 2;
+        background: linear-gradient(135deg, #0f1f4d, #1e3a8a 60%, #2a4fb8);
+      }
+      .projects .card.warm {
+        background: linear-gradient(135deg, #3a2418, #8a3a14 60%, #c8431c);
+      }
+      .projects .card.steel {
+        background: linear-gradient(135deg, #1a1a1d, #3a3a40);
+      }
+      .projects .card.red {
+        background: linear-gradient(135deg, #5a0712, #9a0b22 60%, #c8102e);
+      }
+      .projects .card.dark {
+        background: linear-gradient(135deg, #0a0a0c, #1a1d24);
+      }
+      @media (max-width: 1100px) {
+        .projects .grid {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(3, 260px);
+        }
+        .projects .card.big {
+          grid-row: span 1;
+        }
+      }
+      @media (max-width: 640px) {
+        .projects .grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(5, 240px);
+        }
+      }
+
+      /* ===== WHY US ===== */
+      .why {
+        background: var(--soft);
+        position: relative;
+      }
+      .why .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+      }
+      .why .left {
+        position: sticky;
+        top: 120px;
+        align-self: start;
+      }
+      .why .reasons {
+      }
+      .why .reasons .r {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 24px;
+        padding: 32px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .why .reasons .r:first-child {
+        border-top: 1px solid var(--line);
+      }
+      .why .reasons .ic {
+        width: 54px;
+        height: 54px;
+        background: var(--red);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+      }
+      .why .reasons h4 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+        font-weight: 700;
+      }
+      .why .reasons p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      @media (max-width: 980px) {
+        .why .grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .why .left {
+          position: static;
+        }
+      }
+
+      /* ===== CERTIFICATIONS ===== */
+      .certs {
+        background: #fff;
+        padding: 80px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .certs .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(5, 1fr);
+        gap: 32px;
+        align-items: center;
+      }
+      .certs .head {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .certs .it {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding-left: 24px;
+        border-left: 1px solid var(--line);
+        height: 64px;
+        justify-content: center;
+      }
+      .certs .it .n {
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: -0.01em;
+      }
+      .certs .it .d {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      @media (max-width: 1100px) {
+        .certs .grid {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 24px;
+        }
+      }
+
+      /* ===== CSR ===== */
+      .csr {
+        background: #fff;
+        padding: 120px 0;
+      }
+      .csr .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .csr .visual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 180px);
+        gap: 14px;
+      }
+      .csr .visual .ph {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #3a2418, #8a3a14);
+      }
+      .csr .visual .ph.b {
+        background: linear-gradient(135deg, #0f1f4d, #1e3a8a);
+        grid-row: span 2;
+      }
+      .csr .visual .ph.c {
+        background: linear-gradient(135deg, #5a0712, #c8102e);
+      }
+      .csr .visual .ph .lab {
+        position: absolute;
+        left: 14px;
+        bottom: 12px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: var(--mono);
+        font-size: 9.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      @media (max-width: 980px) {
+        .csr .grid {
+          grid-template-columns: 1fr;
+        }
+        .csr .visual {
+          height: auto;
+        }
+      }
+
+      /* ===== CONTACT BAND ===== */
+      .contact-band {
+        background: linear-gradient(135deg, var(--red) 0%, var(--red-2) 100%);
+        color: #fff;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-band::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.03) 0 1px,
+          transparent 1px 18px
+        );
+      }
+      .contact-band .grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 80px;
+        align-items: center;
+        position: relative;
+      }
+      .contact-band h2 {
+        font-size: clamp(40px, 5vw, 72px);
+      }
+      .contact-band .lede {
+        color: rgba(255, 255, 255, 0.92);
+        max-width: 54ch;
+      }
+      .contact-band .form {
+        background: #fff;
+        color: var(--ink);
+        padding: 36px;
+        border-radius: 2px;
+      }
+      .contact-band .form h3 {
+        margin: 0 0 6px;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+      }
+      .contact-band .form p {
+        margin: 0 0 20px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .contact-band .form .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 14px;
+      }
+      .contact-band .form input,
+      .contact-band .form select,
+      .contact-band .form textarea {
+        width: 100%;
+        border: 1px solid var(--line);
+        padding: 14px;
+        font-family: inherit;
+        font-size: 14px;
+        outline: none;
+      }
+      .contact-band .form input:focus,
+      .contact-band .form select:focus,
+      .contact-band .form textarea:focus {
+        border-color: var(--red);
+      }
+      .contact-band .form button {
+        margin-top: 8px;
+        width: 100%;
+      }
+      @media (max-width: 980px) {
+        .contact-band .grid {
+          grid-template-columns: 1fr;
+        }
+        .contact-band .form .row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ===== FOOTER ===== */
+      footer.site {
+        background: var(--ink);
+        color: #fff;
+        padding: 80px 0 0;
+      }
+      footer.site .grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr 1.2fr;
+        gap: 48px;
+      }
+      footer.site h4 {
+        font-size: 11px;
+        font-family: var(--mono);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0 0 18px;
+      }
+      footer.site ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      footer.site ul li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.85);
+      }
+      footer.site ul li a:hover {
+        color: var(--red);
+      }
+      footer.site .brand h3 {
+        font-size: 32px;
+        margin-bottom: 14px;
+        letter-spacing: -0.02em;
+      }
+      footer.site .brand p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 32ch;
+        margin: 0 0 24px;
+      }
+      footer.site .news input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 12px 0;
+        color: #fff;
+        font-family: inherit;
+        outline: none;
+        font-size: 14px;
+      }
+      footer.site .news input::placeholder {
+        color: rgba(255, 255, 255, 0.45);
+      }
+      footer.site .news button {
+        margin-top: 14px;
+        background: var(--red);
+        color: #fff;
+        border: none;
+        padding: 12px 18px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        cursor: pointer;
+        clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+        font-weight: 700;
+      }
+      footer.site .bottom {
+        margin-top: 80px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      @media (max-width: 1024px) {
+        footer.site .grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
+        }
+      }
+
+      /* ===== FLOAT CTA ===== */
+      .float-cta {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 55;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .float-cta a {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: var(--red);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+        transition: transform 0.2s;
+      }
+      .float-cta a:hover {
+        transform: translateY(-2px);
+      }
+      .float-cta a.wa {
+        background: #25d366;
+      }
+      .float-cta a.tel {
+        background: var(--blue);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TOP STRIP -->
+    <div class="top-strip">
+      <div class="wrap">
+        <div class="row">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 18px;
+              flex-wrap: wrap;
+            "
+          >
+            <span class="live"
+              ><span class="dot"></span> Grinding Media Plant — Now Live in
+              Tema</span
+            >
+            <span style="opacity: 0.7"
+              >Headquartered in Ghana · West Africa &amp; Beyond</span
+            >
+          </div>
+          <div class="links">
+            <span>+233 244 331 635</span>
+            <span style="opacity: 0.4">/</span>
+            <span>info@b5plusgroup.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site">
+      <div class="wrap">
+        <div class="bar">
+          <a class="logo" href="index.html">
+            <div class="mark">
+              <img src="assets/img/b5-logo.jpg" alt="B5 Plus Group" />
+            </div>
+            <div>
+              <div class="name">B5 Plus<sup>®</sup> Group</div>
+              <div class="tag">The Backbone of Africa's Growth</div>
+            </div>
+          </a>
+          <nav class="menu" id="mainmenu" aria-label="Main">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/peb.html">PEB</a>
+            <a href="pages/grinding-media.html"
+              >Grinding Media <span class="pill">NEW</span></a
+            >
+          </nav>
+          <a class="quote-cta" href="mailto:info@b5plusgroup.com">
+            <span class="lbl">Get a Quote</span>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <button
+            class="menu-toggle"
+            aria-label="Menu"
+            onclick="
+              this.classList.toggle('open');
+              document.getElementById('mainmenu').classList.toggle('open');
+            "
+          >
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="bg"></div>
+      <div class="photo-strip">
+        <img src="assets/img/hot-rolling.jpeg" alt="Hot rolling line" />
+      </div>
+      <div class="content">
+        <div class="wrap">
+          <div class="grid">
+            <div>
+              <div class="eyebrow">
+                <span class="bars"><i></i><i></i><i></i></span>
+                <span>Ghana · Est. 2002 · ISO 9001 Certified</span>
+              </div>
+              <h1>
+                The Backbone of<br />
+                <span class="uline">Africa's</span>
+                <span class="swap">Industrial</span><br />
+                Growth.
+              </h1>
+              <p class="lede">
+                Iron, steel, Pre-Engineered Buildings, mining supply, and
+                grinding media — manufactured and delivered from Tema, Ghana to
+                industries across West Africa and beyond.
+              </p>
+              <div class="ctas">
+                <a class="btn-red" href="mailto:info@b5plusgroup.com">
+                  Request a Quote
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="launch">
+              <div class="label">● Just Launched · Plant 06</div>
+              <h3>Grinding Media Balls.<br />Now manufactured in Ghana.</h3>
+              <p>
+                High-chrome &amp; forged steel grinding media for gold, copper,
+                cement and aggregate operations across West Africa.
+              </p>
+              <div class="specs">
+                <div>
+                  <div class="k">Diameter</div>
+                  <div class="v">17 – 125 mm</div>
+                </div>
+                <div>
+                  <div class="k">Hardness</div>
+                  <div class="v">60 – 65 HRC</div>
+                </div>
+                <div>
+                  <div class="k">Capacity</div>
+                  <div class="v">25,000 MT/yr</div>
+                </div>
+                <div>
+                  <div class="k">Lead time</div>
+                  <div class="v">Ex-stock</div>
+                </div>
+              </div>
+              <a class="cta" href="pages/grinding-media.html"
+                >View specifications →</a
+              >
+            </div>
+          </div>
+          <div class="stats">
+            <div class="s">
+              <div class="n">22<span class="u">+</span></div>
+              <div class="l">Years of<br />Operation</div>
+            </div>
+            <div class="s">
+              <div class="n">7</div>
+              <div class="l">Manufacturing<br />Divisions</div>
+            </div>
+            <div class="s">
+              <div class="n">1,200<span class="u">+</span></div>
+              <div class="l">Skilled<br />Employees</div>
+            </div>
+            <div class="s">
+              <div class="n">15<span class="u">+</span></div>
+              <div class="l">Countries<br />Served</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="track">
+        <span>Iron &amp; Steel Manufacturing</span>
+        <span>Pre-Engineered Buildings</span>
+        <span>Mining Products &amp; Services</span>
+        <span>Grinding Media Balls</span>
+        <span>Trailers &amp; Tankers</span>
+        <span>Chemicals</span>
+        <span>Turnkey Projects</span>
+        <span>Iron &amp; Steel Manufacturing</span>
+        <span>Pre-Engineered Buildings</span>
+        <span>Mining Products &amp; Services</span>
+        <span>Grinding Media Balls</span>
+        <span>Trailers &amp; Tankers</span>
+        <span>Chemicals</span>
+        <span>Turnkey Projects</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="wrap">
+        <div class="grid">
+          <div class="photos">
+            <div class="badge">
+              <div><strong>22</strong>Years of<br />Excellence</div>
+            </div>
+            <div class="ph a">
+              <img
+                src="assets/img/chairman.jpeg"
+                alt="Chairman Mukesh V. Thakwani"
+              /><span class="lab"
+                >Fig. 01 — Mukesh V. Thakwani, Founder &amp; CEO</span
+              >
+            </div>
+            <div class="ph b">
+              <img
+                src="assets/img/factory-gate.jpeg"
+                alt="Welder at B5 Plus PEB facility"
+              /><span class="lab">Fig. 02 — Fabrication floor, Tema</span>
+            </div>
+            <div class="ph c">
+              <img
+                src="assets/img/welder.jpeg"
+                alt="B5 Plus headquarters"
+              /><span class="lab">Fig. 03 — Headquarters, Tema</span>
+            </div>
+          </div>
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span>
+              <span>About B5 Plus</span>
+            </div>
+            <h2>
+              The well-established iron and steel company of
+              <span class="red">West Africa</span>.
+            </h2>
+            <p class="lede" style="margin-top: 24px">
+              Founded in 2002 by CEO Mukesh V. Thakwani, B5 Plus Limited is
+              headquartered in Tema, Ghana with a conglomerate of operations
+              spread across West Africa. We manufacture and trade high-quality
+              iron and steel products recognized for their durability and
+              excellence.
+            </p>
+            <div class="checklist">
+              <div class="it">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <div class="t">Certified &amp; Award-Winning</div>
+                  <div class="d">ISO 9001, 14001, OHSAS 18001</div>
+                </div>
+              </div>
+              <div class="it">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <div class="t">24/7 Customer Support</div>
+                  <div class="d">Direct lines to every division</div>
+                </div>
+              </div>
+              <div class="it">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <div class="t">Expert Engineering Team</div>
+                  <div class="d">In-house design &amp; fabrication</div>
+                </div>
+              </div>
+              <div class="it">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <div class="t">Fast &amp; Reliable Delivery</div>
+                  <div class="d">In-stock + nationwide logistics</div>
+                </div>
+              </div>
+            </div>
+            <div class="ceo">
+              <div class="av">M</div>
+              <div>
+                <div class="q">
+                  "Made in Africa, for Africa and beyond — setting global
+                  standards in steel, strength, and sustainability."
+                </div>
+                <div class="a">Mukesh V. Thakwani — Founder &amp; CEO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISIONS -->
+    <section class="divisions">
+      <div class="wrap">
+        <div class="head">
+          <div class="t">
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span>
+              <span>Our Divisions</span>
+            </div>
+            <h2>
+              Seven specialized divisions.
+              <span class="red">One trusted name.</span>
+            </h2>
+          </div>
+          <p class="lede" style="max-width: 480px">
+            From iron ore to finished structures — every step of West Africa's
+            industrial value chain, vertically integrated under one roof.
+          </p>
+        </div>
+        <div class="grid">
+          <a class="card" href="pages/peb.html">
+            <div class="num">02 / PEB</div>
+            <h3>Pre-Engineered Buildings</h3>
+            <p>
+              Warehouses, factories, cold storage, bridges &amp; prefab
+              structures — designed, fabricated and erected.
+            </p>
+            <span class="arr"
+              >View PEB Range
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+          <a class="card" href="pages/mining.html">
+            <div class="num">03 / Mining</div>
+            <h3>Mining Products &amp; Services</h3>
+            <p>
+              Steel balls, drilling consumables, screens, liners, conveyor
+              systems &amp; complete mine-supply support.
+            </p>
+            <span class="arr"
+              >Mining Solutions
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+          <a class="card feat" href="/uploads/m4.jpeg">
+            <span class="badge">NEW PLANT</span>
+            <div class="num">04 / Flagship</div>
+            <h3>Grinding Media Balls</h3>
+            <p>
+              High-chrome &amp; forged steel balls for mining and cement. Now
+              manufactured in Ghana — first in West Africa.
+            </p>
+            <span class="arr"
+              >View Specifications
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+          <a class="card" href="#">
+            <div class="num">05 / Logistics</div>
+            <h3>Trailers &amp; Tankers</h3>
+            <p>
+              Heavy-duty trailers, fuel and chemical tankers — built for West
+              African road and mining conditions.
+            </p>
+            <span class="arr"
+              >View Range
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+          <a class="card" href="#">
+            <div class="num">06 / Chemicals</div>
+            <h3>Industrial Chemicals</h3>
+            <p>
+              Mining, water-treatment and industrial chemicals — sourced and
+              distributed across the region.
+            </p>
+            <span class="arr"
+              >View Catalogue
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+          <a class="card" href="#">
+            <div class="num">07 / Turnkey</div>
+            <h3>Turnkey Projects</h3>
+            <p>
+              From design to commissioning — complete industrial-project
+              execution under a single accountable partner.
+            </p>
+            <span class="arr"
+              >Project Capability
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLAGSHIP GRINDING -->
+    <section class="grinding" id="grinding">
+      <div class="wrap">
+        <div class="grid">
+          <div class="visual">
+            <img
+              class="hero-img"
+              src="assets/img/m4.jpeg"
+              alt="Grinding media balls"
+            />
+            <div class="corner">PLANT 06 · TEMA</div>
+            <div class="lab">Fig. 04 — Forged grinding media, 80mm Ø</div>
+          </div>
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span>
+              <span style="color: var(--red)"
+                >● Now Live · Flagship Launch</span
+              >
+            </div>
+            <h2>
+              Grinding media,<br />now made in <span class="red">Ghana</span>.
+            </h2>
+            <p class="lede">
+              B5 Plus is West Africa's first manufacturer of high-chrome and
+              forged steel grinding media — purpose-built for the region's gold,
+              copper, cement, and aggregate operations. Lower import costs,
+              shorter lead times, and consistent local supply.
+            </p>
+            <div class="specs">
+              <div class="it">
+                <span class="k">Diameter range</span
+                ><span class="v">17 – 125 mm</span>
+              </div>
+              <div class="it">
+                <span class="k">Chrome content</span
+                ><span class="v">10 – 32%</span>
+              </div>
+              <div class="it">
+                <span class="k">Hardness</span
+                ><span class="v">60 – 65 HRC</span>
+              </div>
+              <div class="it">
+                <span class="k">Wear rate</span
+                ><span class="v">&lt; 0.5 g/kWh</span>
+              </div>
+              <div class="it">
+                <span class="k">Annual capacity</span
+                ><span class="v">25,000 MT</span>
+              </div>
+              <div class="it">
+                <span class="k">Standards</span
+                ><span class="v">ISO 9001 / ASTM A532</span>
+              </div>
+            </div>
+            <div class="ctas">
+              <a class="btn-red" href="pages/grinding-media.html">
+                View Full Specifications
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a class="btn-ghost" href="mailto:grinding@b5plusgroup.com"
+                >Request Sample</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEB -->
+    <section class="peb" id="peb">
+      <div class="wrap">
+        <div class="grid">
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span>
+              <span>Division 02 · Pre-Engineered Buildings</span>
+            </div>
+            <h2>Build it once. Build it <span class="red">right.</span></h2>
+            <p class="lede" style="margin-top: 24px">
+              Our PEB division designs, fabricates, and erects steel structures
+              purpose-built for West Africa — from mining warehouses and cement
+              plants to cold-storage facilities, prefab housing, bridges and
+              industrial sheds. Faster, cheaper, and stronger than conventional
+              construction.
+            </p>
+            <div class="apps">
+              <div class="it">
+                <span class="dot"></span> Industrial Warehouses
+              </div>
+              <div class="it">
+                <span class="dot"></span> Manufacturing Factories
+              </div>
+              <div class="it">
+                <span class="dot"></span> Cold Storage Facilities
+              </div>
+              <div class="it"><span class="dot"></span> Mining Workshops</div>
+              <div class="it">
+                <span class="dot"></span> Prefab Housing &amp; Camps
+              </div>
+              <div class="it">
+                <span class="dot"></span> Bridges &amp; Infrastructure
+              </div>
+              <div class="it"><span class="dot"></span> Aviation Hangars</div>
+              <div class="it">
+                <span class="dot"></span> Container Conversions
+              </div>
+            </div>
+            <div
+              class="ctas"
+              style="display: flex; gap: 14px; margin-top: 36px"
+            >
+              <a
+                class="btn-red"
+                style="background: var(--red)"
+                href="pages/peb.html"
+              >
+                Explore PEB Services
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a
+                href="mailto:peb@b5plusgroup.com"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 10px;
+                  padding: 18px 28px;
+                  font-weight: 700;
+                  font-size: 13px;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  border: 1px solid var(--ink);
+                  color: var(--ink);
+                "
+                >Request PEB Quote</a
+              >
+            </div>
+          </div>
+          <div class="visual">
+            <img
+              class="hero-img"
+              src="assets/img/peb1.jpeg"
+              alt="Pre-engineered building structure"
+            />
+            <div class="corner">FIG. 05 · PEB ASSEMBLY</div>
+            <div class="lab">
+              Pre-Engineered Warehouse · 60m clear-span · Tema, Ghana
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINING -->
+    <section class="mining" id="mining">
+      <div class="wrap">
+        <div class="grid">
+          <div class="visual">
+            <img
+              class="hero-img"
+              src="assets/img/factory-gate.jpeg"
+              alt="Mine operations"
+            />
+            <div class="corner">FIG. 06 · MINE OPERATIONS</div>
+            <div class="lab">Open-pit gold mining · Western Region, Ghana</div>
+          </div>
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span>
+              <span style="color: rgba(255, 255, 255, 0.7)"
+                >Division 03 · Mining Products &amp; Services</span
+              >
+            </div>
+            <h2>Equipping West Africa's <span class="red">mines</span>.</h2>
+            <p class="lede">
+              A complete mine-supply partner — from grinding media and drilling
+              consumables to liners, screens, and conveyor systems. Ghana-based
+              stock, technical field support, and direct logistics to mine sites
+              across the region.
+            </p>
+            <div class="list">
+              <div class="it">
+                <span class="n">01</span>
+                <span class="t"
+                  >Grinding Media Balls
+                  <span>· high-chrome &amp; forged</span></span
+                >
+                <span class="arr">VIEW →</span>
+              </div>
+              <div class="it">
+                <span class="n">02</span>
+                <span class="t"
+                  >Drilling Consumables
+                  <span>· bits, rods, couplings</span></span
+                >
+                <span class="arr">VIEW →</span>
+              </div>
+              <div class="it">
+                <span class="n">03</span>
+                <span class="t"
+                  >Mill Liners &amp; Screens
+                  <span>· wear-resistant alloys</span></span
+                >
+                <span class="arr">VIEW →</span>
+              </div>
+              <div class="it">
+                <span class="n">04</span>
+                <span class="t"
+                  >Conveyor &amp; Crusher Spares <span>· OEM-spec</span></span
+                >
+                <span class="arr">VIEW →</span>
+              </div>
+              <div class="it">
+                <span class="n">05</span>
+                <span class="t"
+                  >Mining Chemicals
+                  <span>· cyanide, lime, flocculants</span></span
+                >
+                <span class="arr">VIEW →</span>
+              </div>
+              <div class="it">
+                <span class="n">06</span>
+                <span class="t"
+                  >Turnkey Site Services
+                  <span>· logistics &amp; field engineering</span></span
+                >
+                <span class="arr">VIEW →</span>
+              </div>
+            </div>
+            <div
+              class="ctas"
+              style="display: flex; gap: 14px; margin-top: 40px"
+            >
+              <a class="btn-red" href="pages/mining.html">
+                Mining Capability
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a class="btn-ghost" href="mailto:mining@b5plusgroup.com"
+                >Request Mine Supply Quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section class="stats-band tight">
+      <div class="wrap">
+        <div class="grid">
+          <div class="it">
+            <div class="n">500K<span class="u">+</span></div>
+            <div class="l">MT Steel<br />delivered annually</div>
+          </div>
+          <div class="it">
+            <div class="n">320<span class="u">+</span></div>
+            <div class="l">PEB Projects<br />completed</div>
+          </div>
+          <div class="it">
+            <div class="n">15</div>
+            <div class="l">Active Mine<br />supply contracts</div>
+          </div>
+          <div class="it">
+            <div class="n">25K<span class="u">MT</span></div>
+            <div class="l">Grinding media<br />annual capacity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects">
+      <div class="wrap">
+        <div class="head">
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span
+              ><span>Selected Projects</span>
+            </div>
+            <h2>Built by B5 Plus.</h2>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="card big">
+            <img class="bg-img" src="assets/img/peb3.jpeg" alt="" />
+            <div class="lab">
+              <div class="tag">PEB · Industrial</div>
+              <h4>Tema Free Zone Warehouse — 18,000 m²</h4>
+              <p>
+                Full design, fabrication and erection of a 60m clear-span
+                pre-engineered structure for logistics tenant.
+              </p>
+            </div>
+          </div>
+          <div class="card warm">
+            <img class="bg-img" src="assets/img/gm-hot.jpeg" alt="" />
+            <div class="lab">
+              <div class="tag">Mining</div>
+              <h4>Gold Fields — Mill liners &amp; grinding media</h4>
+              <p>Multi-year supply contract, Tarkwa.</p>
+            </div>
+          </div>
+          <div class="card steel">
+            <img class="bg-img" src="assets/img/rebar.jpeg" alt="" />
+            <div class="lab">
+              <div class="tag">Steel</div>
+              <h4>TMT bar supply — Accra Metro Bridge</h4>
+              <p>4,200 MT Fe-500D, BS 4449 certified.</p>
+            </div>
+          </div>
+          <div class="card red">
+            <img class="bg-img" src="assets/img/steel-stock.jpeg" alt="" />
+            <div class="lab">
+              <div class="tag">PEB · Cold Storage</div>
+              <h4>Cold-chain facility — Kumasi</h4>
+              <p>Insulated PEB shed, 4,000 m².</p>
+            </div>
+          </div>
+          <div class="card dark">
+            <img class="bg-img" src="assets/img/hot-rolling.jpeg" alt="" />
+            <div class="lab">
+              <div class="tag">Turnkey</div>
+              <h4>Burkina Faso cement plant — civil &amp; structural</h4>
+              <p>End-to-end execution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why">
+      <div class="wrap">
+        <div class="grid">
+          <div class="left">
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span
+              ><span>Why B5 Plus</span>
+            </div>
+            <h2>Five reasons West Africa builds with us.</h2>
+            <p class="lede" style="margin-top: 24px">
+              A regional manufacturer with global standards — backed by 22 years
+              of operations, vertical integration, and field-proven engineering
+              teams.
+            </p>
+            <a
+              class="btn-red"
+              style="margin-top: 32px"
+              href="mailto:info@b5plusgroup.com"
+              >Talk to our team →</a
+            >
+          </div>
+          <div class="reasons">
+            <div class="r">
+              <div class="ic">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Vertical integration</h4>
+                <p>
+                  From iron and steel manufacturing through to PEB, mining
+                  supply and grinding media — fewer middlemen, lower costs,
+                  single accountable partner.
+                </p>
+              </div>
+            </div>
+            <div class="r">
+              <div class="ic">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9 12l2 2 4-4M21 12c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Quality &amp; certifications</h4>
+                <p>
+                  ISO 9001, ISO 14001, OHSAS 18001. Products to BS, ASTM, DIN
+                  and ISO standards — independently verified.
+                </p>
+              </div>
+            </div>
+            <div class="r">
+              <div class="ic">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20" />
+                </svg>
+              </div>
+              <div>
+                <h4>Regional presence</h4>
+                <p>
+                  Operations and depots across Ghana, Burkina Faso, Côte
+                  d'Ivoire, Mali, Togo and Benin — local stock, local support.
+                </p>
+              </div>
+            </div>
+            <div class="r">
+              <div class="ic">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s-8-4.5-8-12a8 8 0 1116 0c0 7.5-8 12-8 12z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <h4>On-the-ground engineering</h4>
+                <p>
+                  Field-experienced design and project teams — bid-ready in
+                  days, not months.
+                </p>
+              </div>
+            </div>
+            <div class="r">
+              <div class="ic">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                  <path d="M9 22V12h6v10" />
+                </svg>
+              </div>
+              <div>
+                <h4>People &amp; partnership</h4>
+                <p>
+                  1,200+ skilled employees, women-empowerment programs, and
+                  long-term supplier relationships built on trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="certs tight">
+      <div class="wrap">
+        <div class="grid">
+          <div class="head">Certified &amp;<br />recognized by</div>
+          <div class="it">
+            <div class="n">ISO 9001</div>
+            <div class="d">Quality</div>
+          </div>
+          <div class="it">
+            <div class="n">ISO 14001</div>
+            <div class="d">Environment</div>
+          </div>
+          <div class="it">
+            <div class="n">OHSAS 18001</div>
+            <div class="d">Safety</div>
+          </div>
+          <div class="it">
+            <div class="n">BS · ASTM</div>
+            <div class="d">Steel Standards</div>
+          </div>
+          <div class="it">
+            <div class="n">AGI Award</div>
+            <div class="d">Industry · 2023</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSR -->
+    <section class="csr">
+      <div class="wrap">
+        <div class="grid">
+          <div>
+            <div class="eyebrow">
+              <span class="bars"><i></i><i></i><i></i></span
+              ><span>Beyond Business</span>
+            </div>
+            <h2>
+              Building <span class="red">people</span>, not just structures.
+            </h2>
+            <p class="lede" style="margin-top: 24px">
+              From our women-in-industry program to apprentice training and
+              community infrastructure across Ghana, B5 Plus invests where we
+              operate. Because Africa's growth is more than steel.
+            </p>
+            <ul style="margin-top: 32px; padding: 0; list-style: none">
+              <li
+                style="
+                  padding: 14px 0;
+                  border-top: 1px solid var(--line);
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
+                <span style="font-weight: 700">Women Empowerment Programs</span
+                ><span
+                  style="
+                    color: var(--muted);
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                  "
+                  >5 PROGRAMS</span
+                >
+              </li>
+              <li
+                style="
+                  padding: 14px 0;
+                  border-top: 1px solid var(--line);
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
+                <span style="font-weight: 700"
+                  >Apprentice &amp; Skills Training</span
+                ><span
+                  style="
+                    color: var(--muted);
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                  "
+                  >300+ TRAINED</span
+                >
+              </li>
+              <li
+                style="
+                  padding: 14px 0;
+                  border-top: 1px solid var(--line);
+                  border-bottom: 1px solid var(--line);
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
+                <span style="font-weight: 700">Community Infrastructure</span
+                ><span
+                  style="
+                    color: var(--muted);
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.14em;
+                  "
+                  >12 COMMUNITIES</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="visual">
+            <div class="ph b">
+              <img src="assets/img/welder.jpeg" alt="" /><span class="lab"
+                >Fig. 07 — Apprentice training</span
+              >
+            </div>
+            <div class="ph">
+              <img src="assets/img/factory-gate.jpeg" alt="" /><span class="lab"
+                >Fig. 08 — Plant gate</span
+              >
+            </div>
+            <div class="ph c">
+              <img src="assets/img/hq-building.jpeg" alt="" /><span class="lab"
+                >Fig. 09 — Community build</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT BAND -->
+    <section class="contact-band" id="contact">
+      <div class="wrap">
+        <div class="grid">
+          <div>
+            <div class="eyebrow" style="color: rgba(255, 255, 255, 0.85)">
+              <span class="bars"
+                ><i style="background: #fff"></i><i style="background: #fff"></i
+                ><i style="background: #fff"></i
+              ></span>
+              <span>Get a Quote</span>
+            </div>
+            <h2>Tell us what you need.<br />We'll be back in 24 hours.</h2>
+            <p class="lede" style="margin-top: 24px">
+              Steel, PEB, mining supply, grinding media — every enquiry is
+              routed directly to the responsible division engineer. No call
+              centers, no delays.
+            </p>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+                margin-top: 40px;
+                max-width: 520px;
+              "
+            >
+              <div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    opacity: 0.85;
+                    margin-bottom: 6px;
+                  "
+                >
+                  Call
+                </div>
+                <div style="font-size: 18px; font-weight: 700">
+                  +233 244 331 635
+                </div>
+                <div style="font-size: 14px; opacity: 0.85">
+                  +233 244 333 511
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    opacity: 0.85;
+                    margin-bottom: 6px;
+                  "
+                >
+                  Email
+                </div>
+                <div style="font-size: 14px">info@b5plusgroup.com</div>
+                <div style="font-size: 14px; opacity: 0.85">
+                  sales@b5plusgroup.com
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    opacity: 0.85;
+                    margin-bottom: 6px;
+                  "
+                >
+                  PEB
+                </div>
+                <div style="font-size: 14px">peb@b5plusgroup.com</div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 11px;
+                    letter-spacing: 0.16em;
+                    text-transform: uppercase;
+                    opacity: 0.85;
+                    margin-bottom: 6px;
+                  "
+                >
+                  Mining &amp; Grinding
+                </div>
+                <div style="font-size: 14px">mining@b5plusgroup.com</div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="form"
+            onsubmit="
+              event.preventDefault();
+              alert('Thanks — our team will be in touch within 24 hours.');
+            "
+          >
+            <h3>Request a Quote</h3>
+            <p>
+              Pick your division — your enquiry goes directly to the right team.
+            </p>
+            <div class="row">
+              <input type="text" placeholder="Full name *" required />
+              <input type="text" placeholder="Company *" required />
+            </div>
+            <div class="row">
+              <input type="email" placeholder="Email *" required />
+              <input type="tel" placeholder="Phone" />
+            </div>
+            <div class="row">
+              <select required>
+                <option value="">Division *</option>
+                <option>Iron &amp; Steel Manufacturing</option>
+                <option>Pre-Engineered Buildings (PEB)</option>
+                <option>Mining Products &amp; Services</option>
+                <option>Grinding Media Balls</option>
+                <option>Trailers &amp; Tankers</option>
+                <option>Chemicals</option>
+                <option>Turnkey Projects</option>
+              </select>
+              <select>
+                <option value="">Country</option>
+                <option>Ghana</option>
+                <option>Burkina Faso</option>
+                <option>Côte d'Ivoire</option>
+                <option>Mali</option>
+                <option>Togo</option>
+                <option>Benin</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <textarea
+              rows="4"
+              placeholder="Tell us about your project, quantities, timeline..."
+              style="margin-bottom: 14px"
+            ></textarea>
+            <button class="btn-red" type="submit">
+              Send Enquiry
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site">
+      <div class="wrap">
+        <div class="grid">
+          <div class="brand">
+            <h3>
+              B5 Plus<sup style="font-size: 14px; color: var(--red)">®</sup>
+              Group
+            </h3>
+            <p>
+              Ghana-headquartered, West Africa's leader in iron, steel, PEB
+              structures, mining supply, grinding media, and turnkey industrial
+              projects. Founded 2002.
+            </p>
+            <div style="display: flex; gap: 10px">
+              <a
+                href="#"
+                style="
+                  width: 38px;
+                  height: 38px;
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  display: grid;
+                  place-items: center;
+                  border-radius: 50%;
+                  font-weight: 700;
+                "
+                >in</a
+              >
+              <a
+                href="#"
+                style="
+                  width: 38px;
+                  height: 38px;
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  display: grid;
+                  place-items: center;
+                  border-radius: 50%;
+                  font-weight: 700;
+                "
+                >f</a
+              >
+              <a
+                href="#"
+                style="
+                  width: 38px;
+                  height: 38px;
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  display: grid;
+                  place-items: center;
+                  border-radius: 50%;
+                  font-weight: 700;
+                "
+                >x</a
+              >
+              <a
+                href="#"
+                style="
+                  width: 38px;
+                  height: 38px;
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  display: grid;
+                  place-items: center;
+                  border-radius: 50%;
+                  font-weight: 700;
+                "
+                >▶</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4>Divisions</h4>
+            <ul>
+              <li><a href="pages/peb.html">Pre-Engineered Buildings</a></li>
+              <li><a href="pages/mining.html">Mining Products</a></li>
+              <li>
+                <a href="pages/grinding-media.html">Grinding Media Balls</a>
+              </li>
+              <li><a href="#">Trailers &amp; Tankers</a></li>
+              <li><a href="#">Industrial Chemicals</a></li>
+              <li><a href="#">Turnkey Projects</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Our Organization</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Awards &amp; Certifications</a></li>
+              <li><a href="#">News &amp; Media</a></li>
+              <li><a href="#">CSR / Beyond Business</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>+233 244 331 635</li>
+              <li>+233 244 333 511</li>
+              <li>info@b5plusgroup.com</li>
+              <li style="margin-top: 14px; color: rgba(255, 255, 255, 0.6)">
+                Plot No. 5,<br />Heavy Industrial Area,<br />Tema, Ghana
+              </li>
+            </ul>
+          </div>
+          <div class="news">
+            <h4>Newsletter</h4>
+            <p
+              style="
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.65);
+                margin: 0 0 14px;
+              "
+            >
+              Plant updates, new product launches, project announcements.
+            </p>
+            <input placeholder="your@email.com" />
+            <button>Subscribe →</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <span>© 2026 B5 Plus Group Limited. All rights reserved.</span>
+          <span>ISO 9001 · ISO 14001 · OHSAS 18001 · Made in Ghana</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOAT CTA -->
+    <div class="float-cta">
+      <a href="https://wa.me/233244331635" class="wa" title="WhatsApp"
+        ><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"
+          />
+          <path
+            d="M12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.3c1.4.8 3.1 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.3-1.3-2.9-1.3-4.4 0-4.5 3.7-8.2 8.2-8.2s8.2 3.7 8.2 8.2-3.6 8.3-8.1 8.3z"
+          /></svg
+      ></a>
+      <a href="tel:+233244331635" class="tel" title="Call"
+        ><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20 15.5c-1.2 0-2.5-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.7-6.6-6.6l2.2-2.2c.3-.3.4-.6.2-1-.4-1.1-.6-2.4-.6-3.6 0-.6-.4-1-1-1H4c-.5 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.5-.4-.9-1-.9z"
+          /></svg
+      ></a>
+      <a href="mailto:info@b5plusgroup.com" title="Email"
+        ><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+          /></svg
+      ></a>
+    </div>
+  </body>
+</html>
